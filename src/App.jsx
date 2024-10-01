@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./layout/Sidebar";
+import HeaderSection from "./components/HeaderSection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <Sidebar />
         </div>
         <div className="col-span-9">
+          <HeaderSection />
           <Outlet />
         </div>
       </div>

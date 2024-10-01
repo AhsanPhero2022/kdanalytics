@@ -1,7 +1,9 @@
+import DashboardChart from "./pages/Dashboard/DashboardChart ";
+
 const Content = () => {
   return (
-    <div>
-      <h1>content</h1>
+    <div className="bg-[#1a1a21] min-h-screen">
+      <DashboardChart />
     </div>
   );
 };

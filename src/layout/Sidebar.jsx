@@ -8,8 +8,8 @@ const Sidebar = () => {
   const [activeItem, setActiveItem] = useState("Dashboard");
 
   const menuItems = [
-    { name: "Dashboard", icon: <RxDashboard />, route: "/dashboard" },
-    { name: "Technicals", icon: <FaChartLine />, route: "/technicals" },
+    { name: "Dashboard", icon: <RxDashboard />, route: "/" },
+    { name: "Technicals", icon: <FaChartLine />, route: "/technicals " },
     {
       name: "Fundamentals",
       icon: <AiOutlineFundProjectionScreen />,
