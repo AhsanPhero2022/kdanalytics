@@ -39,7 +39,7 @@ const Sidebar = () => {
           alt="Logo"
         />
       </div>
-      <div className="flex   flex-col mx-auto justify-between h-[90vh] w-64 text-white ">
+      <div className="flex   flex-col mx-auto justify-between h-[85vh] w-64 text-white ">
         {/* Menu Items */}
         <div className="flex-grow">
           {menuItems.map((item) => (

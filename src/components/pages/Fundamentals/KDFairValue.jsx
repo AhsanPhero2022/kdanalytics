@@ -9,7 +9,6 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
-// Registering chart components
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -20,7 +19,6 @@ ChartJS.register(
 );
 
 const KDFairValue = () => {
-  // Data for the bar chart
   const data = {
     labels: [
       "0",
@@ -43,9 +41,9 @@ const KDFairValue = () => {
         ],
         backgroundColor: (context) => {
           const value = context.raw;
-          if (value <= 28.23) return "rgba(34, 197, 94, 1)"; // Green for undervalued
-          if (value <= 56.46) return "rgba(234, 179, 8, 1)"; // Yellow for fair value
-          return "rgba(239, 68, 68, 1)"; // Red for overvalued
+          if (value <= 28.23) return "rgba(34, 197, 94, 1)";
+          if (value <= 56.46) return "rgba(234, 179, 8, 1)";
+          return "rgba(239, 68, 68, 1)";
         },
         borderColor: "rgba(0, 0, 0, 0)",
         borderWidth: 0,
@@ -55,7 +53,6 @@ const KDFairValue = () => {
     ],
   };
 
-  // Chart options for customizing the display
   const options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -71,22 +68,22 @@ const KDFairValue = () => {
           display: false,
         },
         ticks: {
-          display: false, // Hide Y-axis labels
+          display: false,
         },
       },
     },
     plugins: {
       legend: {
-        display: false, // Hides the legend
+        display: false,
       },
       tooltip: {
-        enabled: false, // Disable tooltips for cleaner UI
+        enabled: false,
       },
     },
   };
 
   return (
-    <div className="bg-gray-800 mb-6 p-6 rounded-lg">
+    <div className="bg-[#1f1f28] mb-6 p-6 rounded-lg">
       <h3 className="text-lg font-semibold text-white mb-4">KD Fair Value</h3>
       <div className="flex justify-between  text-white text-sm mb-2">
         <span className="text-green-500">Undervalued</span>

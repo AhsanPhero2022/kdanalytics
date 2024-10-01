@@ -36,7 +36,7 @@ const Fundamentals = () => {
             </h1>
             <KDFairValue />
 
-            <div className="bg-gray-800 p-4 rounded-lg mt-6">
+            <div className="bg-[#1f1f28] p-4 rounded-lg mt-6">
               <h3 className="text-lg font-semibold text-white mb-4">Summary</h3>
               <table className="w-full text-white">
                 <thead>
@@ -135,7 +135,7 @@ const Fundamentals = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-900 min-h-screen">
+    <div className="p-6 bg-[#1a1a21] min-h-screen">
       <h2 className="text-2xl font-bold text-white mb-4">
         Apple Inc. Common Stock USD
       </h2>
