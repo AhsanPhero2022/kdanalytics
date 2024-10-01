@@ -3,6 +3,10 @@ import App from "../App";
 import Content from "../components/Content";
 import Technicals from "../components/pages/Technicals/Technicals ";
 import Fundamentals from "../components/pages/Fundamentals/Fundamentals";
+import SignInPage from "../layout/SignInPage";
+import SignUpPage from "../layout/SignUpPage";
+import AuthGuard from "../AuthGuard/AuthGuard ";
+import UserProfilePage from "../layout/UserProfilePage";
 
 export const router = createBrowserRouter([
   {
@@ -15,12 +19,32 @@ export const router = createBrowserRouter([
       },
       {
         path: "/technicals ",
-        element: <Technicals />,
+        element: (
+          <AuthGuard>
+            <Technicals />
+          </AuthGuard>
+        ),
       },
       {
         path: "/fundamentals",
-        element: <Fundamentals />,
+        element: (
+          <AuthGuard>
+            <Fundamentals />
+          </AuthGuard>
+        ),
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <SignInPage />,
+  },
+  {
+    path: "/signUp",
+    element: <SignUpPage />,
+  },
+  {
+    path: "/profile",
+    element: <UserProfilePage />,
   },
 ]);
