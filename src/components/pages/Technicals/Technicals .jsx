@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BollingerBarsChart from "./BollingerBarsChart ";
+import BollingerBarsChart from "./BollingerBarsChart";
 
 const Technicals = () => {
   // State for active tab
